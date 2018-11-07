@@ -71,6 +71,7 @@
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_d9t1ZeEpEeijppYsbP9GDg" name="p_password" type="Password"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_d9t1ZuEpEeijppYsbP9GDg" name="p_email"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_d9t1aOEpEeijppYsbP9GDg" name="p_nick"/>
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_35etUOKpEeiD8Zuvgs1sRQ" name="p_foto"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_F1uk-duHEeivJOpOlqNeAg" name="destroy" operationType="Destroy" type="Void">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_g-CN4OH8EeiRgpQpN7OCZg" name="p_Administrador_OID" type="OID" typeObject="_-DCCgNaVEei3it7S9d6h-w"/>
