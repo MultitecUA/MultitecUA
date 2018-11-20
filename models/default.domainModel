@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:es.ua.dlsi.ooh="http://www.dlsi.ua.es/ooh/conceptualView/1.0.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:es.ua.dlsi.ooh="http://www.dlsi.ua.es/ooh/conceptualView/1.0.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <es.ua.dlsi.ooh:ConceptualModel xmi:id="_eDQTMNaVEei3it7S9d6h-w" name="MultitecUA">
     <elements xmi:type="es.ua.dlsi.ooh:Class" xmi:id="_eqtUwNaVEei3it7S9d6h-w" name="Usuario" alias="Usuario" stereotyped="User" asociationTarget="_xWorkNaZEei3it7S9d6h-w _B8ayENaaEei3it7S9d6h-w _sMjW4NaaEei3it7S9d6h-w _9VbG4NabEei3it7S9d6h-w _n6-soNadEei3it7S9d6h-w _WI4P0Nw2Eei-7IDl6Dtjaw" associationOrigin="_8uSOYNabEei3it7S9d6h-w __NassN0REeiqXMNr-Cd3TA">
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_NurcANaWEei3it7S9d6h-w" name="new" operationType="New" type="Object" typeObject="_eqtUwNaVEei3it7S9d6h-w" automaticSynchronize="false" customized="true">
@@ -104,7 +104,7 @@
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_0KEDEN0IEeiqXMNr-Cd3TA" name="dameProyectosUsuarioPertenece" operationType="ReadFilter" type="Object" collectionType="List" typeObject="_Vht6gNaWEei3it7S9d6h-w" filter="select (en) FROM ProyectoEN en join en.UsuariosParticipantes usu where usu.Id = :p_OID" automaticSynchronize="false">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_-JYL4N0IEeiqXMNr-Cd3TA" name="p_OID" type="OID" typeObject="_eqtUwNaVEei3it7S9d6h-w"/>
       </operations>
-      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_DAaaAN0OEeiqXMNr-Cd3TA" name="dameProyectosUsuarioEsCandidato" operationType="ReadFilter" type="Object" collectionType="List" typeObject="_Vht6gNaWEei3it7S9d6h-w" filter="select (en) FROM ProyectoEN en join en.CategoriasBuscadas pro where  pro.Id  = :p_OIDCategorias and en.UsuariosParticipantes != :p_OIDUsuario" automaticSynchronize="false">
+      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_DAaaAN0OEeiqXMNr-Cd3TA" name="dameProyectosUsuarioEsCandidato" operationType="ReadFilter" type="Object" collectionType="List" typeObject="_Vht6gNaWEei3it7S9d6h-w" filter="select (en) FROM ProyectoEN en join en.CategoriasBuscadas pro join en.UsuariosParticipantes usu where  pro.Id  = :p_OIDCategorias and usu.Id != :p_OIDUsuario" automaticSynchronize="false">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_ShHHwN0OEeiqXMNr-Cd3TA" name="p_OIDCategorias" type="OID" collectionType="List" typeObject="_GF4GQNw2Eei-7IDl6Dtjaw"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_bNtPAN0PEeiqXMNr-Cd3TA" name="p_OIDUsuario" type="OID" typeObject="_eqtUwNaVEei3it7S9d6h-w"/>
       </operations>
@@ -1801,18 +1801,6 @@
       <styles xmi:type="notation:FillStyle" xmi:id="_U5UO8-EkEeijppYsbP9GDg" fillColor="11796403"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U5UO9OEkEeijppYsbP9GDg" x="370" y="830" width="122"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_nKVzYORSEeiTTpg0k5alHg" type="Note" fontName="Segoe UI" description="Por qué al crear un proyecto&#xD;&#xA;no nos exige un Moderador&#xD;&#xA;por defecto?" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
-      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nKVzZORSEeiTTpg0k5alHg" type="DiagramName">
-        <element xsi:nil="true"/>
-      </children>
-      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nKWacORSEeiTTpg0k5alHg" type="Description">
-        <element xsi:nil="true"/>
-      </children>
-      <styles xmi:type="notation:TextStyle" xmi:id="_nKVzYeRSEeiTTpg0k5alHg"/>
-      <styles xmi:type="notation:LineTypeStyle" xmi:id="_nKVzYuRSEeiTTpg0k5alHg"/>
-      <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nKVzY-RSEeiTTpg0k5alHg" x="-110" y="290"/>
-    </children>
     <children xmi:type="notation:Node" xmi:id="_erNUMOchEeiSRLF2jUVymA" type="2003" element="_eq-DoOchEeiSRLF2jUVymA">
       <children xmi:type="notation:DecorationNode" xmi:id="_erNUNechEeiSRLF2jUVymA" type="5005"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_erNUNuchEeiSRLF2jUVymA" type="7003">
@@ -2304,14 +2292,6 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LxztVuEjEeijppYsbP9GDg" points="[6, 0, -80, 272]$[86, 0, 0, 272]$[86, 16, 0, 288]$[86, -270, 0, 2]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lx2JkOEjEeijppYsbP9GDg" id="(0.9759615384615384,0.4264705882352941)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YO27oOIaEei9KvzHr7wKeA" id="(0.7659574468085106,0.9801980198019802)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_rYaWUORSEeiTTpg0k5alHg" type="NoteAttachment" source="_nKVzYORSEeiTTpg0k5alHg" target="_sMu9ENaaEei3it7S9d6h-w" lineWidth="1">
-      <styles xmi:type="notation:ArrowStyle" xmi:id="_rYaWUeRSEeiTTpg0k5alHg"/>
-      <styles xmi:type="notation:LineTypeStyle" xmi:id="_rYaWUuRSEeiTTpg0k5alHg"/>
-      <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rYaWU-RSEeiTTpg0k5alHg" points="[-4, -1, -121, -75]$[117, 33, 0, -41]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rYcLgORSEeiTTpg0k5alHg" id="(0.6666666666666666,1.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rYcLgeRSEeiTTpg0k5alHg" id="(0.0,1.0)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
