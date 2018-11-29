@@ -580,8 +580,8 @@
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_igwpcOchEeiSRLF2jUVymA" name="destroy" operationType="Destroy" type="Void">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_2hg6oOckEeiSRLF2jUVymA" name="p_Noticia_OID" type="OID" typeObject="_eq-DoOchEeiSRLF2jUVymA"/>
       </operations>
-      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_3MzTUOckEeiSRLF2jUVymA" name="dameNUltimasNoticias" operationType="ReadFilter" type="Object" collectionType="List" typeObject="_eq-DoOchEeiSRLF2jUVymA" filter="select (en) FROM NoticiaEN en order by en.Fecha desc limit :p_n" automaticSynchronize="false" customized="true">
-        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_EseIAOcmEeiSRLF2jUVymA" name="p_n" type="Integer"/>
+      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_3MzTUOckEeiSRLF2jUVymA" name="dameNUltimasNoticias" operationType="ReadFilter" type="Object" collectionType="List" typeObject="_eq-DoOchEeiSRLF2jUVymA" filter="select (en) FROM NoticiaEN en order by en.Fecha desc limit ':p_n'" automaticSynchronize="false" customized="true">
+        <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_ZI1X4PPyEeiR9YWm0e7s2w" name="p_n" type="Integer" scope="Out"/>
       </operations>
       <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_hgVloOywEeiuyJ6s6SNcgA" name="readOID" operationType="ReadOID" type="Object" typeObject="_eq-DoOchEeiSRLF2jUVymA">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_hgVloeywEeiuyJ6s6SNcgA" name="p_Noticia_OID" type="OID" typeObject="_eq-DoOchEeiSRLF2jUVymA"/>
