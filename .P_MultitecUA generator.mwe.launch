@@ -10,6 +10,6 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MultitecUA"/>
 <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms40m -Xmx256m"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms40m -Xmx512m"/>
 <stringAttribute key="startWorkflow" value="/MultitecUA/templates/workflow/generator.mwe"/>
 </launchConfiguration>
